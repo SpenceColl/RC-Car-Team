@@ -7,47 +7,37 @@ import de.hardcode.jxinput.directinput.DirectInputDevice;
 
 public class SteeringWheel extends DirectInputDevice implements JXInputDevice{
 
-	public SteeringWheel(int dev1) {
-		super(dev1);
-	}
-	public Axis getAxis(int arg0) {
-		return null;
-	}
+	public SteeringWheel(int dev) 
+		{super(dev);}
+	
+	public Axis getAxis(int axis) {
+		return super.getAxis(axis);}
 
-	public Button getButton(int arg0) {
-		return null;
-	}
+	public Button getButton(int butt) 
+		{return super.getButton(butt);}
 
-	public Directional getDirectional(int arg0) {
-		return null;
-	}
+	public Directional getDirectional(int dir) 
+		{return super.getDirectional(dir);}
 
-	public int getMaxNumberOfAxes() {
-		return 0;
-	}
+	public int getMaxNumberOfAxes() 
+		{return super.getMaxNumberOfAxes();}
 
-	public int getMaxNumberOfButtons() {
-		return 0;
-	}
+	public int getMaxNumberOfButtons() 
+		{return getMaxNumberOfButtons();}
 
-	public int getMaxNumberOfDirectionals() {
-		return 0;
-	}
+	public int getMaxNumberOfDirectionals() 
+		{return getMaxNumberOfDirectionals();}
 
-	public String getName() {
-		return null;
-	}
+	public String getName() 
+		{return super.getName();}
 
-	public int getNumberOfAxes() {
-		return 0;
-	}
+	public int getNumberOfAxes() 
+		{return super.getNumberOfAxes();}
 
-	public int getNumberOfButtons() {
-		return 0;
-	}
+	public int getNumberOfButtons() 
+		{return super.getNumberOfButtons();}
 
-	public int getNumberOfDirectionals() {
-		return 0;
-	}
+	public int getNumberOfDirectionals() 
+		{return super.getNumberOfDirectionals();}
 
 }
